@@ -23,7 +23,7 @@ test_that("cellTypeToGenes yields genes", {
 test_that("children_TAG works", {
   co = getCellOnto()
   chn = children_TAG("CL:0000540", co)
-  expect_true(nrow(chn@cleanFrame)==34) 
+  expect_true(nrow(chn@cleanFrame)==37) 
 })
 
 test_that("onto generators work", {
@@ -55,6 +55,6 @@ test_that("concatenation works", {
   efoOnto = getEFOOnto()
   defsibs = siblings_TAG("EFO:1001209", efoOnto)
   conc = c(defsibs, defsibs)
-  expect_true(length(conc@ontoTags)==8)
+  expect_true(length(conc@ontoTags)==60)
 })
 
