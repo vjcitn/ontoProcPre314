@@ -1,0 +1,100 @@
+format-version: 1.2
+data-version: http://www.ebi.ac.uk/efo/releases/v3.28.0/efo.owl
+subsetdef: 1_STAR "Preliminary entries"
+subsetdef: 2_STAR "Annotated by 3rd party"
+subsetdef: 3_STAR "Manually annotated by ChEBI Team"
+subsetdef: abnormal_slim ""
+subsetdef: attribute_slim ""
+subsetdef: clingen ""
+subsetdef: cumbo ""
+subsetdef: cur ""
+subsetdef: developmental_classification ""
+subsetdef: do_inheritance_inconsistent ""
+subsetdef: dubious_grouping ""
+subsetdef: early_development ""
+subsetdef: EFO:0010944 "Term added upon request from Human Cell Atlas curators."
+subsetdef: efo_slim ""
+subsetdef: emapa_ehdaa2 ""
+subsetdef: EmbDevSlim ""
+subsetdef: FB_gloss ""
+subsetdef: feed_aligned ""
+subsetdef: functional_classification ""
+subsetdef: gard_rare ""
+subsetdef: gocheck_do_not_annotate ""
+subsetdef: gocheck_do_not_manually_annotate ""
+subsetdef: goslim_agr ""
+subsetdef: goslim_aspergillus ""
+subsetdef: goslim_candida ""
+subsetdef: goslim_chembl ""
+subsetdef: goslim_flybase_ribbon ""
+subsetdef: goslim_generic ""
+subsetdef: goslim_metagenomics ""
+subsetdef: goslim_mouse ""
+subsetdef: goslim_pir ""
+subsetdef: goslim_plant ""
+subsetdef: goslim_pombe ""
+subsetdef: goslim_yeast ""
+subsetdef: gosubset_prok ""
+subsetdef: grouping_class ""
+subsetdef: hidden_assertion ""
+subsetdef: hposlim_core ""
+subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
+subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
+subsetdef: http://purl.obolibrary.org/obo/valid_for_go_ontology ""
+subsetdef: http://purl.obolibrary.org/obo/valid_for_gocam ""
+subsetdef: implicit_genetic_in_ordo ""
+subsetdef: inconsistent_with_fma ""
+subsetdef: major_organ ""
+subsetdef: merged_class ""
+subsetdef: metaclass ""
+subsetdef: mostly_harmless ""
+subsetdef: mpath_slim ""
+subsetdef: n_of_one ""
+subsetdef: non_informative ""
+subsetdef: obsoletion_candidate ""
+subsetdef: ordo_biological_anomaly ""
+subsetdef: ordo_clinical_situation ""
+subsetdef: ordo_clinical_subtype ""
+subsetdef: ordo_clinical_syndrome ""
+subsetdef: ordo_disease ""
+subsetdef: ordo_etiological_subtype ""
+subsetdef: ordo_group_of_disorders ""
+subsetdef: ordo_histopathological_subtype ""
+subsetdef: ordo_inheritance_inconsistent ""
+subsetdef: ordo_malformation_syndrome ""
+subsetdef: ordo_morphological_anomaly ""
+subsetdef: organ_slim ""
+subsetdef: other_hierarchy ""
+subsetdef: pheno_slim ""
+subsetdef: predisposition ""
+subsetdef: prototype_pattern ""
+subsetdef: relational_slim ""
+subsetdef: ro-eco ""
+subsetdef: scalar_slim ""
+subsetdef: speculative ""
+subsetdef: uberon_slim ""
+subsetdef: ubprop:upper_level ""
+subsetdef: upper_level ""
+subsetdef: value_slim ""
+subsetdef: vertebrate_core ""
+synonymtypedef: BRAND_NAME "BRAND NAME"
+synonymtypedef: INN "INN"
+synonymtypedef: IUPAC_NAME "IUPAC NAME"
+remark: 2021-03-15
+ontology: http://www.ebi.ac.uk/efo/efo.owl
+property_value: dc-creator "Gautier Koscielny" xsd:string
+property_value: dc-creator "Laura Huerta Martinez" xsd:string
+property_value: dc-creator "Olamidipupo Ajigboye" xsd:string
+property_value: dc-creator "Paola Roncaglia" xsd:string
+property_value: dc-creator "Trish Whetzel" xsd:string
+property_value: dc-creator "Zoe May Pendlington" xsd:string
+property_value: http://purl.obolibrary.org/obo/format-version "1.4" xsd:string
+property_value: http://purl.org/dc/elements/1.1/rights "Copyright [2014] EMBL - European Bioinformatics Institute \nLicensed under the Apache License, Version 2.0 (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the \nLicense. " xsd:string
+property_value: http://purl.org/dc/terms/license "www.apache.org/licenses/LICENSE-2.0" xsd:string
+property_value: http://www.ebi.ac.uk/efo/creator "Catherine Leroy" xsd:string
+property_value: http://www.ebi.ac.uk/efo/creator "Dani Welter" xsd:string
+property_value: http://www.ebi.ac.uk/efo/creator "Drashtti Vasant" xsd:string
+property_value: http://www.ebi.ac.uk/efo/creator "Ele Holloway" xsd:string
+property_value: http://www.ebi.ac.uk/efo/creator "Eleanor Williams" xsd:string
+property_value: http://www.ebi.ac.uk/efo/creator "Emma Kate Hastings" xsd:string
+property_value: http://www.ebi.ac.uk/efo/creator "Helen Parkinson" xsd:string

@@ -364,10 +364,10 @@ on text fields and list structures.
  The table below  displays the ontologies;  the version number and the date that version was released, date the data was downloaded, format of the file, and the link to the raw data. All Owl files were converted to obo file using the program ROBOT . Specifically  ROBOT version 1.8.1 .
 
 ```{r}
-ontoInfo = system.file("csv", "ontologiesInfo.csv", package = "ontoProc")
+#ontoInfo = system.file("csv", "ontologiesInfo.csv", package = "ontoProc")
 #ontoInfo = readRDS(ontoInfo.rds)
-cleanOntoInfo= ontoInfo[,-4]
-kable(cleanOntoInfo)
+#cleanOntoInfo= ontoInfo[,-4]
+#kable(cleanOntoInfo)
 ```
 
 

@@ -1,0 +1,100 @@
+format-version: 1.2
+data-version: caro/2.0/beta/caro.owl
+subsetdef: core "CARO2 core class"
+subsetdef: olfactory_system_draft "adult olfactory system model"
+subsetdef: plus "CARO2 plus class"
+synonymtypedef: InChIKey ""
+synonymtypedef: systematic_synonym "" EXACT
+remark: Based on CARO 1.0, with modifications and additions by David Osumi-Sutherland, Chris Mungall, Ramona Walls and Melissa Haendal.
+import: http://purl.obolibrary.org/obo/caro/caro_bridge.owl
+import: http://purl.obolibrary.org/obo/caro/imports/bfo_classes_only.owl
+import: http://purl.obolibrary.org/obo/caro/imports/chebi_import.owl
+import: http://purl.obolibrary.org/obo/caro/imports/go_import.owl
+import: http://purl.obolibrary.org/obo/caro/imports/pato_import.owl
+import: http://purl.obolibrary.org/obo/caro/imports/pco_import.owl
+import: http://purl.obolibrary.org/obo/caro/imports/ro_import.owl
+import: http://purl.obolibrary.org/obo/ro/core.owl
+ontology: caro/caro
+owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(Class(<http://purl.obolibrary.org/obo/CARO_0000000>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/CARO_0000003>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/CARO_0000004>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/CARO_0000006>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/CARO_0000007>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/CARO_0000011>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/CARO_0000013>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/CARO_0000014>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/CARO_0000032>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/CARO_0000043>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/CARO_0000055>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/CARO_0001000>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/CARO_0001501>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/CARO_0002004>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/CARO_0010003>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/CARO_0020000>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/CARO_0020001>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/CARO_0020002>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/CARO_0020003>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/PATO_0000125>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/PATO_0002309>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000053>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002180>))\nDeclaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#id>))\n\n\n\n############################\n#   Classes\n############################\n\n# Class: <http://purl.obolibrary.org/obo/CARO_0000000> (anatomical entity)\n\nDisjointUnion(<http://purl.obolibrary.org/obo/CARO_0000000> <http://purl.obolibrary.org/obo/CARO_0000006> <http://purl.obolibrary.org/obo/CARO_0000007>)\n\n# Class: <http://purl.obolibrary.org/obo/CARO_0000003> (connected anatomical structure)\n\n\n# Class: <http://purl.obolibrary.org/obo/CARO_0000004> (organism substance)\n\n\n# Class: <http://purl.obolibrary.org/obo/CARO_0000006> (material anatomical entity)\n\nDisjointClasses(<http://purl.obolibrary.org/obo/CARO_0000006> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/CARO_0000007>))\n\n# Class: <http://purl.obolibrary.org/obo/CARO_0000007> (immaterial anatomical entity)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/CARO_0000007> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CARO_0000000> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0000125>))))\nDisjointClasses(<http://purl.obolibrary.org/obo/CARO_0000007> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/CARO_0000006>))\n\n# Class: <http://purl.obolibrary.org/obo/CARO_0000011> (connected anatomical system)\n\n\n# Class: <http://purl.obolibrary.org/obo/CARO_0000032> (organism subdivision)\n\n\n# Class: <http://purl.obolibrary.org/obo/CARO_0000043> (tissue)\n\n\n# Class: <http://purl.obolibrary.org/obo/CARO_0000055> (multi-tissue structure)\n\n\n# Class: <http://purl.obolibrary.org/obo/CARO_0001000> (multi-cell-part structure)\n\nSubClassOf(<http://purl.obolibrary.org/obo/CARO_0001000> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CARO_0000003> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectComplementOf(<http://purl.obolibrary.org/obo/CARO_0000013>)) ObjectMinCardinality(2 <http://purl.obolibrary.org/obo/RO_0002180> <http://purl.obolibrary.org/obo/CARO_0000014>)))\n\n# Class: <http://purl.obolibrary.org/obo/CARO_0001501> (neuron projection bundle subsegment)\n\nSubClassOf(<http://purl.obolibrary.org/obo/CARO_0001501> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0002309>)))\n\n# Class: <http://purl.obolibrary.org/obo/CARO_0002004> (segment body)\n\nSubClassOf(<http://purl.obolibrary.org/obo/CARO_0002004> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/CARO_0010003>)))\n\n# Class: <http://purl.obolibrary.org/obo/CARO_0020000> (disconnected anatomical group)\n\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CARO_0020000> \"CARO:0000054\"^^xsd:string)\n\n# Class: <http://purl.obolibrary.org/obo/CARO_0020001> (multi organ part structure)\n\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CARO_0020001> \"CARO:0000041\"^^xsd:string)\n\n# Class: <http://purl.obolibrary.org/obo/CARO_0020002> (cell cluster)\n\n\n# Class: <http://purl.obolibrary.org/obo/CARO_0020003> (cellular anatomical structure)\n\nEquivalentClasses(Annotation(<http://purl.obolibrary.org/obo/IAO_0000115> \"With a reflexive part_of relation this might safely be defined as 'anatomical structure' that has_part some cell\") <http://purl.obolibrary.org/obo/CARO_0020003> ObjectUnionOf(<http://purl.obolibrary.org/obo/CARO_0000013> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/CARO_0000013>)))\n\n\nEquivalentClasses(Annotation(rdfs:comment \"Should belong in BFO, but lives in caro for now.\") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0000125>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0000125>))\nDisjointClasses(<http://purl.obolibrary.org/obo/CARO_0000003> <http://purl.obolibrary.org/obo/CARO_0000004> <http://purl.obolibrary.org/obo/CARO_0020000>)\nDisjointClasses(<http://purl.obolibrary.org/obo/CARO_0000011> <http://purl.obolibrary.org/obo/CARO_0000032> <http://purl.obolibrary.org/obo/CARO_0000043> <http://purl.obolibrary.org/obo/CARO_0000055> <http://purl.obolibrary.org/obo/CARO_0020001> <http://purl.obolibrary.org/obo/CARO_0020002>)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CARO_0001002> \"CARO:0000010\"^^xsd:string)\n)
+
+[Term]
+id: CARO:0000000
+name: anatomical entity
+def: "A part of a cellular organism that is either an immaterial entity or a material entity with granularity above the level of a protein complex.  Or, a substance produced by a cellular organism with granularity above the level of a protein complex." [CAROC:Brownsville2014]
+comment: Following BFO, material anatomical entities may have immaterial parts (the lumen of your stomach is part of your stomach).  The granularity limit follows the limits set by the Gene Ontology on the granularity limit for GO:cellular_component. Note that substances produced by an organism (sweat, feaces, urine) do not need to be part of an organism to qualify as an anatomical structure.
+is_a: CARO:0030000 ! biological entity
+
+[Term]
+id: CARO:0000003
+name: connected anatomical structure
+def: "Material anatomical entity that is a single connected structure with inherent 3D shape generated by coordinated expression of the organism's own genome." []
+comment: Note that the definition does not say 'generated exclusively by the co-ordinated expression of the organism's own genome', so this is still valid for cases where normal morphogenesis requires the actions of a facultative symbiont, or some looser dependency such as the a requirement for the presence of gut flora for normal gut development.
+subset: core
+intersection_of: CARO:0000006 ! material anatomical entity
+intersection_of: RO:0000053 PATO:0002266 ! bearer of 3-D shape
+intersection_of: RO:0000053 PATO:0010000 ! bearer of maximally connected
+disjoint_from: CARO:0000004 ! organism substance
+
+[Term]
+id: CARO:0000004
+name: organism substance
+def: "Material anatomical entity in a gaseous, liquid, semisolid or solid state; produced by anatomical structures or derived from inhaled and ingested substances that have been modified by anatomical structures as they pass through the body and that does not have inherent 3D shape generated by coordinated expression of the organism's own genome." []
+comment: Note - CARO explicitly declares organisms substances to be part of (some) organism.
+synonym: "portion of organism substance" EXACT []
+is_a: CARO:0000006 ! material anatomical entity
+property_value: IAO:0000112 "Examples include feces, urine, blood, blood plasma, lymph, hemolymph, cerbro-spinal fluid.  This class does not encompass anatomical entities with inherent 3D structure such as dentine and arthropod cuticle." xsd:string
+
+[Term]
+id: CARO:0000005
+name: anatomical space
+def: "An Immaterial anatomical entity of three dimensions, that is generated by morphogenetic or other physiologic processes and that is bounded by an anatomical surface." []
+comment: Original definition: "Non-material anatomical entity of three dimensions, that is generated by morphogenetic or other physiologic processes; is surrounded by one or more anatomical structures; contains one or more organism substances or anatomical structures."  The last clause. "contains one or more organism substances or anatomical structures" was dropped from the definition because it was an unnecessary restriction.
+is_a: BFO:0000029 ! site
+is_a: CARO:0000007 ! immaterial anatomical entity
+intersection_of: BFO:0000029 ! site
+intersection_of: BFO:0000050 CARO:0001010 ! part of organism or virus or viroid
+disjoint_from: CARO:0000008 ! anatomical line
+disjoint_from: CARO:0000009 ! anatomical point
+disjoint_from: CARO:0001002 ! anatomical surface
+
+[Term]
+id: CARO:0000006
+name: material anatomical entity
+def: "An anatomical entity that has mass." []
+subset: core
+is_a: CARO:0000000 ! anatomical entity
+intersection_of: CARO:0000000 ! anatomical entity
+intersection_of: RO:0000053 PATO:0000125 ! bearer of mass
+disjoint_from: CARO:0000007 ! immaterial anatomical entity
+
+[Term]
+id: CARO:0000007
+name: immaterial anatomical entity
+def: "Anatomical entity that has no mass." []
+subset: core
+is_a: BFO:0000141 ! immaterial entity
+is_a: CARO:0000000 ! anatomical entity
+
+[Term]
+id: CARO:0000008
+name: anatomical line
+def: "A one dimensional, immaterial anatomical entity." []
+is_a: BFO:0000026 ! one-dimensional spatial region
+is_a: CARO:0000007 ! immaterial anatomical entity
+disjoint_from: CARO:0000009 ! anatomical point
+disjoint_from: CARO:0001002 ! anatomical surface
+property_value: IAO:0000112 "A line between two points where these are typically used to measure some aspect of morphology, such as the distance between the eyes or the length of a leg. " xsd:string
+
+[Term]
+id: CARO:0000009
+name: anatomical point
+def: "Non-material anatomical entity of zero dimension, which forms a boundary of an anatomical line or surface." []
+is_a: BFO:0000018 ! zero-dimensional spatial region
+is_a: CARO:0000007 ! immaterial anatomical entity
+disjoint_from: CARO:0001002 ! anatomical surface
+property_value: IAO:0000112 "The tip of the nose or other material anatomical entity, or the end of an anatomical line. " xsd:string
+
+[Term]
+id: CARO:0000010
+name: anatomical boundary
+def: "A non-material anatomical entity of two dimensions. Anatomical boundaries are contiguous structures." []
