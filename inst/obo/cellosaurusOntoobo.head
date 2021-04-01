@@ -1,0 +1,100 @@
+format-version: 1.2
+data-version: 37.0
+date: 01:22:2021 12:00
+default-namespace: cellosaurus
+
+subsetdef: Cancer_cell_line "Cancer cell line"
+subsetdef: Conditionally_immortalized_cell_line "Conditionally immortalized cell line"
+subsetdef: Embryonic_stem_cell "Embryonic stem cell"
+subsetdef: Factor-dependent_cell_line "Factor-dependent cell line"
+subsetdef: Female "Female"
+subsetdef: Finite_cell_line "Finite cell line"
+subsetdef: Hybrid_cell_line "Hybrid cell line"
+subsetdef: Hybridoma "Hybridoma"
+subsetdef: Induced_pluripotent_stem_cell "Induced pluripotent stem cell"
+subsetdef: Male "Male"
+subsetdef: Mixed_sex "Mixed sex"
+subsetdef: Sex_ambiguous "Sex ambiguous"
+subsetdef: Sex_unspecified "Sex unspecified"
+subsetdef: Somatic_stem_cell "Somatic stem cell"
+subsetdef: Spontaneously_immortalized_cell_line "Spontaneously immortalized cell line"
+subsetdef: Stromal_cell_line "Stromal cell line"
+subsetdef: Telomerase_immortalized_cell_line "Telomerase immortalized cell line"
+subsetdef: Transformed_cell_line "Transformed cell line"
+subsetdef: Undefined_cell_line_type "Undefined cell line type"
+ontology: Cellosaurus
+
+! Description: Cellosaurus: a knowledge resource on cell lines
+! Version: 37.0
+! Last update: 22-January-2021
+!
+!    _____     _ _
+!   / ____|   | | |
+!  | |     ___| | | ___  ___  __ _ _   _ _ __ _   _ ___
+!  | |    / _ \ | |/ _ \/ __|/ _` | | | | '__| | | / __|
+!  | |___|  __/ | | (_) \__ \ (_| | |_| | |  | |_| \__ \
+!   \_____\___|_|_|\___/|___/\__,_|\__,_|_|   \__,_|___/
+!
+!
+! Licensing information: we have chosen to apply the Creative Commons
+! Attribution 4.0 International (CC BY 4.0) license to the Cellosaurus
+! (https://creativecommons.org/licenses/by/4.0/). This means that you are
+! free to copy and redistribute the Cellosaurus in any medium or format.
+! You can remix, transform, and build upon the Cellosaurus for any purpose,
+! even commercially. You must give appropriate credit, provide a link to the
+! license, and indicate if changes were made.
+!
+! For any questions regarding the Cellosaurus, contact us at:
+! mailto:cellosaurus@sib.swiss
+
+[Term]
+id: CVCL_E548
+name: #15310-LN
+synonym: "15310-LN" RELATED []
+synonym: "TER461" RELATED []
+synonym: "TER-461" RELATED []
+synonym: "Ter 461" RELATED []
+synonym: "TER479" RELATED []
+synonym: "TER-479" RELATED []
+synonym: "Ter 479" RELATED []
+synonym: "Extract 519" RELATED []
+subset: Transformed_cell_line
+subset: Female
+xref: dbMHC:48439
+xref: ECACC:94050311
+xref: IHW:IHW09326
+xref: IPD-IMGT/HLA:10074
+xref: Wikidata:Q54398957
+xref: http://bioinformatics.hsanmartino.it/ecbr/cl326.html
+xref: http://pathology.ucla.edu/workfiles/360cx.pdf
+xref: http://pathology.ucla.edu/workfiles/370cx.pdf
+xref: NCBI_TaxID:9606 ! Homo sapiens
+comment: "Part of: 12th International Histocompatibility Workshop (12IHW) cell line panel. HLA typing: A*03,25; B*37:01:01:01,47:01:01:03; C*06; DPA1*01; DPB1*04:01:01; DQA1*01:01:01:01,01:03:01; DQB1*05:01:01;06:03:01:02; DRB1*01:01:01,14:17; DRB3*01:01 (IPD-IMGT/HLA; 10074). Transformant: Epstein-Barr virus (EBV)(NCBI-Taxonomy; 10376). Derived from sampling site: Peripheral blood."
+creation_date: 2012-10-22T00:00:00Z
+
+[Term]
+id: CVCL_KA96
+name: #16-15
+subset: Hybridoma
+xref: RCB:RCB4635
+xref: Wikidata:Q54422067
+xref: PubMed:25400923
+xref: NCBI_TaxID:10090 ! Mus musculus
+xref: NCBI_TaxID:10116 ! Rattus norvegicus
+comment: "Monoclonal antibody isotype: IgM. Monoclonal antibody target: UniProtKB; Q5T5X7; Human BEND3."
+relationship: derived_from CVCL_4032 ! P3X63Ag8.653
+creation_date: 2017-08-22T00:00:00Z
+
+[Term]
+id: CVCL_IW91
+name: #40a
+subset: Cancer_cell_line
+subset: Male
+xref: Wikidata:Q54422071
+xref: PubMed:28159921
+xref: NCIt:C21619 ! Mouse mesothelioma
+xref: NCBI_TaxID:10090 ! Mus musculus
+comment: "Characteristics: Established from parent cell line after two passages in the peritoneal cavity of C57BL/6 mice (PubMed=28159921). Transformant: Crocidolite asbestos(ChEBI; CHEBI:46666). Derived from metastatic site: Peritoneum. Breed/subspecies: C57BL/6."
+relationship: derived_from CVCL_IW90 ! 40
+creation_date: 2017-05-15T00:00:00Z
+

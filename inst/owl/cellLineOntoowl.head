@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/clo.owl/"
+     xml:base="http://purl.obolibrary.org/obo/clo.owl/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ro="http://purl.obofoundry.org/obo/ro.owl#"
+     xmlns:efo="http://www.ebi.ac.uk/efo/"
+     xmlns:fma="http://sig.uw.edu/fma#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:cito="http://purl.org/spar/cito/"
+     xmlns:core="http://purl.obolibrary.org/obo/core#"
+     xmlns:doap="http://usefulinc.com/ns/doap#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:chebi="http://purl.obolibrary.org/obo/chebi/"
+     xmlns:refont="http://purl.obolibrary.org/obo/uberon/refont/"
+     xmlns:uberon="http://purl.obolibrary.org/obo/uberon#"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
+     xmlns:cellline="http://www.ebi.ac.uk/cellline#"
+     xmlns:elements="http://purl.org/dc/elements/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:Thesaurus="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#"
+     xmlns:cellline2="http://www.ebi.ac.uk/cellline/"
+     xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#"
+     xmlns:disease_ontology="http://purl.org/obo/owlapi/disease_ontology#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/clo.owl">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/clo/CHEBI_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/clo/CL_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/clo/DOID_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/clo/GO_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/clo/IAO_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/clo/NCBITaxon_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/clo/OBI_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/clo/PATO_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/clo/RO_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/clo/UBERON_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/clo/cellline_import.owl"/>
+        <dc:contributor xml:lang="en">Alex Ade</dc:contributor>
+        <dc:contributor>Yuqin Liu</dc:contributor>
+        <dc:creator xml:lang="en">Alexander Diehl</dc:creator>
+        <dc:creator xml:lang="en">Allen Xiang</dc:creator>
+        <dc:creator xml:lang="en">Asiyah Yu Lin</dc:creator>
+        <dc:creator>Caty Chung</dc:creator>
+        <dc:creator xml:lang="en">Daniel Cooper</dc:creator>
+        <dc:creator xml:lang="en">Helen Parkinson</dc:creator>
+        <dc:creator xml:lang="en">Hiroshi Masuya</dc:creator>
+        <dc:creator>Hongjie Pan</dc:creator>
+        <dc:creator xml:lang="en">James Malone</dc:creator>
+        <dc:creator>Jiangan Xie</dc:creator>
+        <dc:creator xml:lang="en">Jie Zheng</dc:creator>
+        <dc:creator>Matthew Brush</dc:creator>
+        <dc:creator xml:lang="en">Sirarat Sarntivijai</dc:creator>
+        <dc:creator xml:lang="en">Stefanie Seltmann</dc:creator>
+        <dc:creator>Stephan Schurer</dc:creator>
+        <dc:creator>Uma Vempati</dc:creator>
+        <dc:creator>Xiaolin Yang</dc:creator>
+        <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
+        <dc:creator xml:lang="en">Yue Liu</dc:creator>
+        <dc:date xml:lang="en">2020-12-23</dc:date>
+        <dc:description xml:lang="en">The Cell Line Ontology (CLO) is a community-based ontology of cell lines. The CLO is developed to unify publicly available cell line entry data from multiple sources to a standardized logically defined format based on consensus design patterns.</dc:description>
+        <dc:format xml:lang="en">OWL-DL</dc:format>
+        <dc:subject xml:lang="en">An ontology for the domain of cell lines and cell line cells</dc:subject>
+        <dc:title xml:lang="en">CLO: Cell Line Ontology</dc:title>
+        <rdfs:comment>Citation: Sarntivijai S, Lin Y, Xiang Z, Meehan TF, Diehl AD, Vempati UD, Schürer TC, Pang C, Malone J, Parkinson H, Liu Y, Takatsuki T, Saijo K, Masuya H, Nakamura Y, Brush MH, Haendel MA, Zheng J, Stoeckert CJ, Peters B, Mungall CJ, Carey TE, States DJ, Athey BD, He Y. CLO: The Cell Line Ontology. Journal of Biomedical Semantics. 2014, 5:37. doi:10.1186/2041-1480-5-37. PMID: 25852852. PMCID: PMC4387853.</rdfs:comment>
+        <owl:versionInfo xml:lang="en">2.1.172</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000179 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000179">
+        <rdfs:label>BFO OWL specification label</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000180 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000180">
+        <rdfs:label>BFO CLIF specification label</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
