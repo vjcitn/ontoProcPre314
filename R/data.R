@@ -56,3 +56,11 @@
 #' @examples
 #' head(packDesc2019)
 "packDesc2019"
+
+
+#'A dataframe containing version information for the ontologies used in ontoProc
+#'@format data.frame instance 
+#' @note A small data frame that containing the version information , date downloaded , and link to all the ontologies.
+#' @examples 
+#'head(ontoInfo) 
+"ontoInfo"
