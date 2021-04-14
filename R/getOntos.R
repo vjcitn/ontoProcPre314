@@ -24,26 +24,13 @@ add_cache_cl_simple = function(cache = BiocFileCache::BiocFileCache(),
 #' @return instance of ontology_index (S3) from ontologyIndex
 #' @note Provenance information is kept in the form
 #' of excerpts of top records in `dir(system.file("obo", package="ontoProc"), full=TRUE)`
+
+
+#' @rdname getCellOnto
+#' @aliases getCellOnto
 #' @export
-getCellOnto = function(useNew=TRUE, newest=FALSE, cache=BiocFileCache::BiocFileCache(),
-    use0718=FALSE)  {
-    if (newest) {
-     qu = BiocFileCache::bfcquery(cache, "cl-simple")
-     if (nrow(qu) == 0) {
-       chk = try(add_cache_cl_simple(cache=cache))
-       if (inherits(chk, "try-error")) stop("could not add cl-simple.obo to cache")
-       qu = BiocFileCache::bfcquery(cache, "cl-simple")
-       }
-     if (nrow(qu)>1) warning("more than one row mentions cl-simple, using first")
-     return(ontologyIndex::get_OBO(qu$fpath[1], extract_tags="everything"))
-    }
-    sfstr = "ontoRda/cellOnto.rda"
-    if (use0718) sfstr = "ontoRda/co_0718.rda"
-    get(load(system.file(
-      sfstr, package="ontoProc")))
-    }
-
-
+getCellOnto= function() get(load(system.file(
+  "ontoRda/cellOnto.rda", package="ontoProc")))
  
 
 
@@ -68,10 +55,10 @@ getChebiLite = function() get(load(system.file(
 getCellosaurusOnto = function() get(load(system.file(
       "ontoRda/cellosaurusOnto.rda", package="ontoProc")))
 #' @rdname getCellOnto
-#' @aliases getUBERON_NE
+#' @aliases getUBERON
 #' @export
-getUBERON_NE = function() get(load(system.file(
-      "ontoRda/ne_uberon.rda", package="ontoProc")))
+getUBERON = function() get(load(system.file(
+      "ontoRda/uberon.rda", package="ontoProc")))
 
 #' @rdname getCellOnto
 #' @aliases getChebiOnto

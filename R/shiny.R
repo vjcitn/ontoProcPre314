@@ -47,16 +47,16 @@ makeSelectInput = function(onto, term, type="siblings",
 demoApp = function() {
  cello = getCellOnto()
  cellineo = getCellLineOnto()
- uber = getUBERON_NE()
+ uber = getUBERON()
  efo = getEFOOnto()
- onts = list(Cell=cello, CellLine=cellineo, uberon_ne=uber, EFO=efo)
- starts = list(Cell="neuron", CellLine="neuron", uberon_ne="anatomical system", EFO="neuron")
+ onts = list(Cell=cello, CellLine=cellineo, uberon=uber, EFO=efo)
+ starts = list(Cell="neuron", CellLine="neuron", uberon="anatomical system", EFO="neuron")
  
  ui = fluidPage(
        sidebarLayout(
         sidebarPanel(
          selectInput("ontoChoice", "ontology", 
-            choices=c("Cell", "EFO", "CellLine", "uberon_ne"),
+            choices=c("Cell", "EFO", "CellLine", "uberon"),
             selected = "EFO"),
          selectInput("relToStart", "relation", 
             choices=c("siblings", "children"),

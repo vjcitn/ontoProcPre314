@@ -356,8 +356,6 @@ provides easily used functions for parsing ontologies in
 the OBO format and for performing basic queries
 on text fields and list structures.
 
-# References
-
 
 # Appendix: Information of ontologies
 
@@ -368,5 +366,10 @@ data(ontoInfo)
 cleanOntoInfo= ontoInfo[,-4]
 kable(cleanOntoInfo)
 ```
+
+# References
+
+
+
 
 

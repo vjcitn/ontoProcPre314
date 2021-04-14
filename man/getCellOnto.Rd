@@ -6,7 +6,7 @@
 \alias{getEFOOnto}
 \alias{getChebiLite}
 \alias{getCellosaurusOnto}
-\alias{getUBERON_NE}
+\alias{getUBERON}
 \alias{getChebiOnto}
 \alias{getOncotreeOnto}
 \alias{getDiseaseOnto}
@@ -16,12 +16,7 @@
 \alias{getPATOnto}
 \title{load ontologies that may include non-ascii strings and therefore cannot be in data folder}
 \usage{
-getCellOnto(
-  useNew = TRUE,
-  newest = FALSE,
-  cache = BiocFileCache::BiocFileCache(),
-  use0718 = FALSE
-)
+getCellOnto()
 
 getCellLineOnto()
 
@@ -31,7 +26,7 @@ getChebiLite()
 
 getCellosaurusOnto()
 
-getUBERON_NE()
+getUBERON()
 
 getChebiOnto()
 
@@ -50,11 +45,11 @@ getPATOnto()
 \arguments{
 \item{useNew}{logical(1) only for getCellOnto if TRUE return ontology_index instance of cell ontology 2.1 of May 21 2020, defaults to TRUE}
 
+\item{use0718}{logical(1) only for getCellOnto if TRUE cell ontology of July 2018}
+
 \item{newest}{logical(1) if TRUE will use BiocFileCache to retrieve/use latest cl-simple.obo; overrides}
 
 \item{cache}{instance of BiocFileCache}
-
-\item{use0718}{logical(1) only for getCellOnto if TRUE cell ontology of July 2018}
 }
 \value{
 instance of ontology_index (S3) from ontologyIndex
