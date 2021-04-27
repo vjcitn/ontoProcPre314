@@ -15,6 +15,7 @@
 \alias{getPROnto}
 \alias{getPATOnto}
 \alias{getCaroOnto}
+\alias{getMondoOnto}
 \title{load ontologies that may include non-ascii strings and therefore cannot be in data folder
 useNew}
 \usage{
@@ -45,6 +46,8 @@ getPROnto()
 getPATOnto()
 
 getCaroOnto()
+
+getMondoOnto()
 }
 \value{
 instance of ontology_index (S3) from ontologyIndex
