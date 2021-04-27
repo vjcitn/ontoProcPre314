@@ -17,5 +17,5 @@ desc = function(x) {
    fv = grep("^format-version", attr(ont, "version"), value=TRUE)
    data.frame(func=x, nclass=length(ont$name), nprop=length(names(ont)), nroots=nroots(ont), datav=ona(dsub(dv)), fmtv=ona(fsub(fv)), stringsAsFactors=FALSE)
 }
-packdesc = do.call(rbind, lapply(funcs, desc))
+packdesc = do.call(rbind, lapply(funcs[-11], desc))
 write.csv(packdesc, file="packdesc.csv")
