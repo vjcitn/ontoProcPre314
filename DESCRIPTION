@@ -12,7 +12,7 @@ Author: Vince Carey <stvjc@channing.harvard.edu>
 Imports: Biobase, S4Vectors, methods, AnnotationDbi, stats, utils, BiocFileCache,
 	shiny, graph, Rgraphviz, ontologyPlot, dplyr, magrittr, DT, igraph
 Suggests: knitr, org.Hs.eg.db, org.Mm.eg.db, testthat, BiocStyle,
-	SingleCellExperiment, celldex, rmarkdown
+	SingleCellExperiment, celldex, rmarkdown, ontoProcData
 Depends: R (>= 3.5), ontologyIndex
 Maintainer: VJ Carey <stvjc@channing.harvard.edu>
 License: Artistic-2.0
