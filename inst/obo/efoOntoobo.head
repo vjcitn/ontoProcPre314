@@ -1,18 +1,19 @@
 format-version: 1.2
-data-version: http://www.ebi.ac.uk/efo/releases/v3.28.0/efo.owl
+data-version: http://www.ebi.ac.uk/efo/releases/v3.39.1/efo.owl
 subsetdef: 1_STAR "Preliminary entries"
 subsetdef: 2_STAR "Annotated by 3rd party"
 subsetdef: 3_STAR "Manually annotated by ChEBI Team"
 subsetdef: abnormal_slim ""
 subsetdef: attribute_slim ""
+subsetdef: BDS_subset ""
 subsetdef: clingen ""
 subsetdef: cumbo ""
 subsetdef: cur ""
 subsetdef: developmental_classification ""
+subsetdef: disease_grouping ""
 subsetdef: do_inheritance_inconsistent ""
 subsetdef: dubious_grouping ""
 subsetdef: early_development ""
-subsetdef: EFO:0010944 "Term added upon request from Human Cell Atlas curators."
 subsetdef: efo_slim ""
 subsetdef: emapa_ehdaa2 ""
 subsetdef: EmbDevSlim ""
@@ -36,17 +37,18 @@ subsetdef: goslim_pombe ""
 subsetdef: goslim_yeast ""
 subsetdef: gosubset_prok ""
 subsetdef: grouping_class ""
+subsetdef: harrisons_view ""
 subsetdef: hidden_assertion ""
 subsetdef: hposlim_core ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_ontology ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_gocam ""
+subsetdef: http://www.ebi.ac.uk/efo/added_for_HCA "Term added upon request from Human Cell Atlas curators."
 subsetdef: implicit_genetic_in_ordo ""
 subsetdef: inconsistent_with_fma ""
 subsetdef: major_organ ""
 subsetdef: merged_class ""
-subsetdef: metaclass ""
 subsetdef: mostly_harmless ""
 subsetdef: mpath_slim ""
 subsetdef: n_of_one ""
@@ -80,7 +82,7 @@ subsetdef: vertebrate_core ""
 synonymtypedef: BRAND_NAME "BRAND NAME"
 synonymtypedef: INN "INN"
 synonymtypedef: IUPAC_NAME "IUPAC NAME"
-remark: 2021-03-15
+remark: 2022-02-24
 ontology: http://www.ebi.ac.uk/efo/efo.owl
 property_value: dc-creator "Gautier Koscielny" xsd:string
 property_value: dc-creator "Laura Huerta Martinez" xsd:string
@@ -89,12 +91,10 @@ property_value: dc-creator "Paola Roncaglia" xsd:string
 property_value: dc-creator "Trish Whetzel" xsd:string
 property_value: dc-creator "Zoe May Pendlington" xsd:string
 property_value: http://purl.obolibrary.org/obo/format-version "1.4" xsd:string
-property_value: http://purl.org/dc/elements/1.1/rights "Copyright [2014] EMBL - European Bioinformatics Institute \nLicensed under the Apache License, Version 2.0 (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the \nLicense. " xsd:string
+property_value: http://purl.org/dc/elements/1.1/rights "Copyright [2014] EMBL - European Bioinformatics Institute\nLicensed under the Apache License, Version 2.0 (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the\nLicense. " xsd:string
 property_value: http://purl.org/dc/terms/license "www.apache.org/licenses/LICENSE-2.0" xsd:string
 property_value: http://www.ebi.ac.uk/efo/creator "Catherine Leroy" xsd:string
 property_value: http://www.ebi.ac.uk/efo/creator "Dani Welter" xsd:string
 property_value: http://www.ebi.ac.uk/efo/creator "Drashtti Vasant" xsd:string
 property_value: http://www.ebi.ac.uk/efo/creator "Ele Holloway" xsd:string
 property_value: http://www.ebi.ac.uk/efo/creator "Eleanor Williams" xsd:string
-property_value: http://www.ebi.ac.uk/efo/creator "Emma Kate Hastings" xsd:string
-property_value: http://www.ebi.ac.uk/efo/creator "Helen Parkinson" xsd:string

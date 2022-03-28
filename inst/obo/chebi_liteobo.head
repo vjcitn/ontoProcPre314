@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: 197
-date: 26:02:2021 18:41
+data-version: 208
+date: 27:01:2022 20:41
 saved-by: chebi
 subsetdef: 1_STAR "Preliminary entries"
 subsetdef: 2_STAR "Annotated by 3rd party"
@@ -12,7 +12,7 @@ default-namespace: chebi_ontology
 remark: ChEBI subsumes and replaces the Chemical Ontology first
 remark: developed by Michael Ashburner & Pankaj Jaiswal.
 remark: Author: ChEBI curation team 
-remark: ChEBI Release version 197
+remark: ChEBI Release version 208
 remark: For any queries contact chebi-help@ebi.ac.uk 
 ontology: chebi
 
