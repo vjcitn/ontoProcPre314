@@ -1,11 +1,15 @@
 format-version: 1.2
-data-version: releases/2020-08-02/pato.obo
+data-version: releases/2022-02-20/pato.obo
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
 subsetdef: cell_quality "cell_quality"
 subsetdef: disposition_slim "Disposition slim"
 subsetdef: hpo_slim "Human phenotype slim"
+subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
+subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
+subsetdef: http://purl.obolibrary.org/obo/valid_for_go_ontology ""
+subsetdef: http://purl.obolibrary.org/obo/valid_for_gocam ""
 subsetdef: mpath_slim "Pathology slim"
 subsetdef: relational_slim "Relational slim: types of quality that require an additional entity in order to exist"
 subsetdef: ro-eco ""
@@ -17,6 +21,7 @@ property_value: http://purl.org/dc/elements/1.1/description "An ontology of phen
 property_value: http://purl.org/dc/elements/1.1/title "PATO - the Phenotype And Trait Ontology" xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/3.0/
 property_value: IAO:0000700 PATO:0000001
+property_value: owl:versionInfo "2022-02-20" xsd:string
 
 [Term]
 id: PATO:0000000
@@ -28,7 +33,6 @@ id: PATO:0000001
 name: quality
 alt_id: PATO:0000072
 def: "A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities" [PATOC:GVG]
-property_value: IAO:0000589 "quality (PATO)" xsd:string
 
 [Term]
 id: PATO:0000002
@@ -94,7 +98,3 @@ is_a: PATO:0000165 ! time
 
 [Term]
 id: PATO:0000012
-name: obsolete absolute age
-is_obsolete: true
-
-[Term]

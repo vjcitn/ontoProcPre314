@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: 37.0
-date: 01:22:2021 12:00
+data-version: 40.0
+date: 12:16:2021 12:00
 default-namespace: cellosaurus
 
 subsetdef: Cancer_cell_line "Cancer cell line"
@@ -25,8 +25,8 @@ subsetdef: Undefined_cell_line_type "Undefined cell line type"
 ontology: Cellosaurus
 
 ! Description: Cellosaurus: a knowledge resource on cell lines
-! Version: 37.0
-! Last update: 22-January-2021
+! Version: 40.0
+! Last update: 16-December-2021
 !
 !    _____     _ _
 !   / ____|   | | |
@@ -48,6 +48,30 @@ ontology: Cellosaurus
 ! mailto:cellosaurus@sib.swiss
 
 [Term]
+id: CVCL_B0T9
+name: #132 PC3-1-SC-E8
+synonym: "Z48-5MG-70" RELATED []
+subset: Hybridoma
+xref: Wikidata:Q108819335
+xref: http://www.google.com/patents/EP0501779A1
+xref: NCBI_TaxID:10090 ! Mus musculus
+comment: "Group: Patented cell line. Registration: International Depositary Authority, American Type Culture Collection (ATCC); HB-10564. Monoclonal antibody isotype: IgG2a. Monoclonal antibody target: UniProtKB; P47712; Human PLA3G4A."
+relationship: derived_from CVCL_D145 ! HL-1 Friendly Myeloma-653
+creation_date: 2021-09-23T00:00:00Z
+
+[Term]
+id: CVCL_B0T8
+name: #132 PL12 SC-D1
+synonym: "Z48-5MG-63" RELATED []
+subset: Hybridoma
+xref: Wikidata:Q108819336
+xref: http://www.google.com/patents/EP0501779A1
+xref: NCBI_TaxID:10090 ! Mus musculus
+comment: "Group: Patented cell line. Registration: International Depositary Authority, American Type Culture Collection (ATCC); HB-10563. Monoclonal antibody isotype: IgG1. Monoclonal antibody target: UniProtKB; P47712; Human PLA3G4A."
+relationship: derived_from CVCL_D145 ! HL-1 Friendly Myeloma-653
+creation_date: 2021-09-23T00:00:00Z
+
+[Term]
 id: CVCL_E548
 name: #15310-LN
 synonym: "15310-LN" RELATED []
@@ -65,7 +89,6 @@ xref: ECACC:94050311
 xref: IHW:IHW09326
 xref: IPD-IMGT/HLA:10074
 xref: Wikidata:Q54398957
-xref: http://bioinformatics.hsanmartino.it/ecbr/cl326.html
 xref: http://pathology.ucla.edu/workfiles/360cx.pdf
 xref: http://pathology.ucla.edu/workfiles/370cx.pdf
 xref: NCBI_TaxID:9606 ! Homo sapiens
@@ -75,26 +98,3 @@ creation_date: 2012-10-22T00:00:00Z
 [Term]
 id: CVCL_KA96
 name: #16-15
-subset: Hybridoma
-xref: RCB:RCB4635
-xref: Wikidata:Q54422067
-xref: PubMed:25400923
-xref: NCBI_TaxID:10090 ! Mus musculus
-xref: NCBI_TaxID:10116 ! Rattus norvegicus
-comment: "Monoclonal antibody isotype: IgM. Monoclonal antibody target: UniProtKB; Q5T5X7; Human BEND3."
-relationship: derived_from CVCL_4032 ! P3X63Ag8.653
-creation_date: 2017-08-22T00:00:00Z
-
-[Term]
-id: CVCL_IW91
-name: #40a
-subset: Cancer_cell_line
-subset: Male
-xref: Wikidata:Q54422071
-xref: PubMed:28159921
-xref: NCIt:C21619 ! Mouse mesothelioma
-xref: NCBI_TaxID:10090 ! Mus musculus
-comment: "Characteristics: Established from parent cell line after two passages in the peritoneal cavity of C57BL/6 mice (PubMed=28159921). Transformant: Crocidolite asbestos(ChEBI; CHEBI:46666). Derived from metastatic site: Peritoneum. Breed/subspecies: C57BL/6."
-relationship: derived_from CVCL_IW90 ! 40
-creation_date: 2017-05-15T00:00:00Z
-

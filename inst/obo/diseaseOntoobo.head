@@ -1,13 +1,15 @@
 format-version: 1.2
-data-version: doid/releases/2021-02-24/doid-non-classified.obo
-date: 24:02:2021 19:24
+data-version: doid/releases/2022-03-02/doid-non-classified.obo
+date: 02:03:2022 12:06
 saved-by: lschriml
 subsetdef: DO_AGR_slim "DO_AGR_slim"
 subsetdef: DO_cancer_slim "DO_cancer_slim"
+subsetdef: DO_CFDE_slim "DO_CFDE_slim"
 subsetdef: DO_FlyBase_slim "DO_FlyBase_slim"
 subsetdef: DO_GXD_slim "DO_GXD_slim"
 subsetdef: DO_IEDB_slim "DO_IEDB_slim"
 subsetdef: DO_MGI_slim "DO_MGI_slim"
+subsetdef: DO_RAD_slim "DO_RAD_slim"
 subsetdef: DO_rare_slim "DO_rare_slim"
 subsetdef: GOLD "GOLD"
 subsetdef: gram-negative_bacterial_infectious_disease "gram-negative_bacterial_infectious_disease"
@@ -34,10 +36,11 @@ def: "A vascular cancer that derives_from the cells that line the walls of blood
 subset: DO_cancer_slim
 subset: NCIthesaurus
 synonym: "hemangiosarcoma" EXACT []
+xref: ICDO:9120/3
 xref: MESH:D006394
 xref: NCI:C3088
 xref: NCI:C9275
-xref: SNOMEDCT_US_2020_09_01:39000009
+xref: SNOMEDCT_US_2021_09_01:39000009
 xref: UMLS_CUI:C0018923
 xref: UMLS_CUI:C0854893
 is_a: DOID:175 ! vascular cancer
@@ -57,6 +60,7 @@ id: DOID:0014667
 name: disease of metabolism
 def: "A disease that involving errors in metabolic processes of building or degradation of molecules." [url:http\://www.ncbi.nlm.nih.gov/books/NBK22259/]
 subset: DO_AGR_slim
+subset: DO_CFDE_slim
 subset: DO_GXD_slim
 subset: NCIthesaurus
 synonym: "metabolic disease" EXACT []
@@ -64,7 +68,7 @@ xref: ICD10CM:E88.9
 xref: ICD9CM:277.9
 xref: MESH:D008659
 xref: NCI:C3235
-xref: SNOMEDCT_US_2020_09_01:75934005
+xref: SNOMEDCT_US_2021_09_01:75934005
 xref: UMLS_CUI:C0025517
 is_a: DOID:4 ! disease
 
@@ -82,7 +86,7 @@ def: "A drug allergy that has_allergic_trigger acetylsalicylic acid." [url:https
 subset: DO_IEDB_slim
 synonym: "acetylsalicylic acid allergy" EXACT []
 synonym: "ASA allergy" EXACT []
-xref: SNOMEDCT_US_2020_09_01:293586001
+xref: SNOMEDCT_US_2021_09_01:293586001
 xref: UMLS_CUI:C0004058
 is_a: DOID:0060500 ! drug allergy
 
@@ -93,8 +97,4 @@ def: "A beta-lactam allergy that has_allergic_trigger benzylpenicillin." [url:ht
 subset: DO_IEDB_slim
 synonym: "benzyl penicillin allergy" EXACT []
 synonym: "penicillin G allergy" EXACT []
-xref: SNOMEDCT_US_2020_09_01:294499007
-xref: UMLS_CUI:C0571411
-is_a: DOID:0060519 ! beta-lactam allergy
-
-[Term]
+xref: SNOMEDCT_US_2021_09_01:294499007

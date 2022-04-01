@@ -1,75 +1,41 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/uberon.owl#"
      xml:base="http://purl.obolibrary.org/obo/uberon.owl"
+     xmlns:cl="http://purl.obolibrary.org/obo/cl#"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:cl1="http://purl.obolibrary.org/obo/cl#3"
+     xmlns:cl2="http://purl.obolibrary.org/obo/cl#1"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:cito="http://purl.org/spar/cito/"
      xmlns:core="http://purl.obolibrary.org/obo/uberon/core#"
      xmlns:doap="http://usefulinc.com/ns/doap#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:obo2="http://www.geneontology.org/formats/oboInOwl#http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:core1="http://purl.obolibrary.org/obo/core#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:ubprop="http://purl.obolibrary.org/obo/ubprop#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/uberon.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/uberon/releases/2021-02-12/uberon.owl"/>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alan Ruttenberg</dc:contributor>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alexander Diehl</dc:contributor>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ann Maglia</dc:contributor>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anna Anagnostopoulos</dc:contributor>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bgee Project - http://bgee.unil.ch</dc:contributor>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Bug</dc:contributor>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brian K Hall</dc:contributor>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Carlo Torniai</dc:contributor>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Catherine Leroy</dc:contributor>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ceri Van Slyke</dc:contributor>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cynthia Smith</dc:contributor>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">David Hill</dc:contributor>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">David Osumi-Sutherland</dc:contributor>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Duncan Davidson</dc:contributor>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Frederic Bastian</dc:contributor>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gene Ontology Consortium</dc:contributor>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">George Gkoutos</dc:contributor>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hilmar Lapp</dc:contributor>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">James Balhoff</dc:contributor>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">James Malone</dc:contributor>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jonathan Bard</dc:contributor>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lydie Lane</dc:contributor>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marc Robinson-Rechavi</dc:contributor>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mark Engelstad - https://orcid.org/0000-0001-5889-4463</dc:contributor>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maryann Martone</dc:contributor>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIF Project - http://neuinfo.org/</dc:contributor>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Onard Mejino</dc:contributor>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO Project</dc:contributor>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paul Schofield</dc:contributor>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paul Sereno</dc:contributor>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paula Duek Roggli</dc:contributor>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paula Mabee</dc:contributor>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phenoscape Project</dc:contributor>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rebecca Foulger</dc:contributor>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Robert Druzinsky</dc:contributor>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sarah Whitcher Kansa - https://orcid.org/0000-0001-7920-5321</dc:contributor>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shahim Essaid</dc:contributor>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Suzanna Lewis</dc:contributor>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Terry Hayamizu</dc:contributor>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Terry Meehan</dc:contributor>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trish Whetzel</dc:contributor>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yvonne Bradford</dc:contributor>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neXtProt project</dc:contributor>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alex Dececchi</dc:creator>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anne Niknejad</dc:creator>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aurelie Comte</dc:creator>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chris Mungall - http://orcid.org/0000-0002-6601-2165    </dc:creator>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">David Blackburn</dc:creator>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Erik Segerdell</dc:creator>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Melissa Haendel</dc:creator>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nizar Ibrahim</dc:creator>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wasila Dahdul</dc:creator>
-        <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Uberon is an integrated cross-species anatomy ontology representing a variety of entities classified according to traditional anatomical criteria such as structure, function and developmental lineage. The ontology includes comprehensive relationships to taxon-specific anatomical ontologies, allowing integration of functional, phenotype and expression data.</dc:description>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/uberon/releases/2022-02-21/uberon.owl"/>
+        <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000104"/>
+        <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-6601-2165"/>
+        <dc:creator rdf:resource="https://orcid.org/0000-0001-5839-6798"/>
+        <dc:creator rdf:resource="https://orcid.org/0000-0001-7972-3866"/>
+        <dc:creator rdf:resource="https://orcid.org/0000-0001-9114-8737"/>
+        <dc:creator rdf:resource="https://orcid.org/0000-0002-1810-9886"/>
+        <dc:creator rdf:resource="https://orcid.org/0000-0002-7356-1779"/>
+        <dc:creator rdf:resource="https://orcid.org/0000-0002-9611-1279"/>
+        <dc:creator rdf:resource="https://orcid.org/0000-0003-3162-7490"/>
+        <dc:creator rdf:resource="https://orcid.org/0000-0003-3308-6245"/>
+        <dc:description>Uberon is an integrated cross-species anatomy ontology representing a variety of entities classified according to traditional anatomical criteria such as structure, function and developmental lineage. The ontology includes comprehensive relationships to taxon-specific anatomical ontologies, allowing integration of functional, phenotype and expression data.</dc:description>
         <dc:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://uberon.org</dc:publisher>
         <dc:source rdf:resource="http://dbpedia.org"/>
         <dc:source rdf:resource="http://palaeos.com"/>
@@ -98,3 +64,37 @@
         <dc:source rdf:resource="http://purl.obolibrary.org/obo/vsao.owl"/>
         <dc:source rdf:resource="http://purl.obolibrary.org/obo/wbbt.owl"/>
         <dc:source rdf:resource="http://purl.obolibrary.org/obo/xao.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/zfa.owl"/>
+        <dc:source rdf:resource="http://uri.neuinfo.org/nif/nifstd"/>
+        <dc:source rdf:resource="http://www.e-lico.eu/public/kupo/kupo.owl"/>
+        <dc:source rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
+        <dc:source>ISBN:0030229073 Invertebrate Zoology, Barnes</dc:source>
+        <dc:source>ISBN:0073040584 Vertebrates, Kardong</dc:source>
+        <dc:source>ISBN:0123813611 Comparative Anatomy and Histology: A Mouse and Human Atlas, Treuting and Dintzis</dc:source>
+        <dc:source>ISBN:0226313379 Fins into Limbs: Evolution, Development, and Transformation, Hall</dc:source>
+        <dc:source>ISBN:0443065837 Human embryology, Larsen</dc:source>
+        <dc:source>ISBN:0471888893 Comparative Vertebrate Neuroanatomy: Evolution and Adaptation by Butler and Hodos</dc:source>
+        <dc:source>ISBN:0683400088 Stedman&apos;s Medical Dictionary</dc:source>
+        <dc:source>ISBN:1588900649 Color Atlas and Textbook of Human Anatomy: Nervous system and sensory organs By Werner Kahle, Michael Frotscher</dc:source>
+        <dc:source>ISBN:1588903958 Principles and practice of pediatric neurosurgery By A. Leland Albright, P. David Adelson, Ian F. Pollack</dc:source>
+        <dc:source>ISBN:1607950324 Craniofacial Embryogenetics &amp; Development, 2nd edition, Sperber</dc:source>
+        <dc:source>ISBN:978-0-12-369548-2 Principles of Developmental Genetics, Sally A Moody</dc:source>
+        <dc:source>ISBN:9780120749034 The laboratory rat</dc:source>
+        <dc:source>ISBN:9780397517251 Surgical anatomy of the hand and upper extremity. By James R. Doyle and Michael J. Botte</dc:source>
+        <dc:source>ISBN:9780674021839 The Tree of Life - Guillaume Lecointre, Herve Le Guyader</dc:source>
+        <dc:source>ISBN:9780878932504 Developmental Biology</dc:source>
+        <dc:source>MESH</dc:source>
+        <dc:source>PMID:11433360 Placental development: lessons from mouse mutants</dc:source>
+        <dc:source>PMID:16417468 Forgotten and novel aspects in pancreas development, Pieler and Chen</dc:source>
+        <dc:source>aggregates AAO from 13:04:2012</dc:source>
+        <dc:source>aggregates TAO from 09:08:2012</dc:source>
+        <dc:source>aggregates VSAO from 16:07:2012</dc:source>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://wiki.phenotypercn.org/wg/phenotypercn/index.php?title=Neural_Crest_Workshop</dc:source>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://wiki.phenotypercn.org/wiki/August_2012_Notes</dc:source>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://docs.google.com/document/d/16JZOuH9sh_a8uIXA4cqg0Q1H6MV5yCj3-rhuKsZoV_U/edit</dc:source>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://docs.google.com/document/d/1MnUgispgGfNQoezYzWzzGTnkAnI0gzRnJIwdip6MMtw/edit</dc:source>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://docs.google.com/document/d/1cPWBqrl_Qy7XHEWFqtR_PgQX61yRkgGuLaiDpnEXxkE/edit</dc:source>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://docs.google.com/document/d/1r9kNPpFYGdu0SpJDLyFAVQczBlG0wAZCBMd18gG3Ot8/edit#</dc:source>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://docs.google.com/spreadsheet/ccc?key=0Aj8NJdyb-leqdDM0R3hTVTRHRExDVjRCSkZEbDc5N1E#gid=0</dc:source>
+        <dc:title>Uber-anatomy ontology</dc:title>
+        <terms:contributor rdf:resource="https://github.com/orgs/pato-ontology/teams/pato-community"/>
